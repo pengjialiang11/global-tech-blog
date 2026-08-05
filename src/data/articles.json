@@ -1,0 +1,241 @@
+[
+  {
+    "id": "1785836337946",
+    "slug": "china-open-source-llms-reshaping-global-tooling",
+    "title": "How China's Open-Source LLMs Are Reshaping Global AI Tooling",
+    "track": "ai-digital-software",
+    "description": "A look at how permissively-licensed Chinese large models are being forked into developer tooling worldwide.",
+    "content": "<h2>From labs to toolchains</h2><p>Over the past 18 months, several Chinese research labs released large language models under permissive licenses. The practical effect is a wave of community forks that plug directly into existing developer workflows.</p><p>What matters for global readers is not the benchmark leaderboard but the <strong>integration surface</strong>: quantized weights, OpenAI-compatible APIs, and fine-tuning recipes that run on consumer hardware.</p><h2>Why it matters</h2><p>This lowers the cost of building localized AI products outside the US cloud ecosystem, a core theme of this blog's coverage of cross-border technology trends.</p>",
+    "publishDate": "2026-08-04",
+    "contentType": "core",
+    "contentForm": "evergreen",
+    "tags": [
+      "llm",
+      "open-source",
+      "developer-tools"
+    ],
+    "status": "published",
+    "author": "SinoTechLens",
+    "sponsored": false,
+    "seo": {
+      "metaDescription": "How permissively-licensed Chinese LLMs are being forked into global developer tooling and AI products.",
+      "focusKeyword": "open-source LLM"
+    }
+  },
+  {
+    "id": "2",
+    "slug": "weekly-ai-agent-roundup-autonomous-coding",
+    "title": "Weekly AI Agent Roundup: Autonomous Coding Hits Production",
+    "track": "ai-digital-software",
+    "description": "This week's notable moves in autonomous coding agents and enterprise rollouts.",
+    "content": "<p>Several vendors reported production deployments of coding agents inside internal repositories. The pattern is consistent: agents handle boilerplate and test scaffolding while humans review diffs.</p><p>We track these weekly as part of our <em>news</em> cadence (roughly 30% of output per the editorial plan).</p>",
+    "publishDate": "2026-08-03",
+    "contentType": "core",
+    "contentForm": "news",
+    "tags": [
+      "ai-agent",
+      "coding",
+      "weekly"
+    ],
+    "status": "published",
+    "author": "SinoTechLens",
+    "sponsored": false
+  },
+  {
+    "id": "3",
+    "slug": "inside-chinas-mature-node-semiconductor-surge",
+    "title": "Inside China's Mature-Node Semiconductor Surge",
+    "track": "semiconductor-hardware",
+    "description": "Mature-process fabs are where China's semiconductor industry is quietly building global share.",
+    "content": "<p>While flagship nodes grab headlines, the bulk of automotive, industrial and IoT silicon is built on mature processes. Chinese fabs have scaled capacity here rapidly.</p><p>We analyze equipment localization rates and export-market implications.</p>",
+    "publishDate": "2026-07-29",
+    "contentType": "core",
+    "contentForm": "evergreen",
+    "tags": [
+      "semiconductor",
+      "fab",
+      "supply-chain"
+    ],
+    "status": "published",
+    "author": "SinoTechLens",
+    "sponsored": false
+  },
+  {
+    "id": "4",
+    "slug": "unitree-humanoid-demo-explained",
+    "title": "Unitree's Latest Humanoid Demo, Explained",
+    "track": "green-tech-manufacturing",
+    "description": "Breaking down the locomotion and manipulation claims from the latest humanoid showcase.",
+    "content": "<p>The demo showed stable stair climbing and dynamic object hand-offs. We separate demonstrated capability from marketing framing.</p>",
+    "publishDate": "2026-07-28",
+    "contentType": "supplementary",
+    "contentForm": "news",
+    "tags": [
+      "robotics",
+      "hardware"
+    ],
+    "status": "published",
+    "author": "SinoTechLens",
+    "sponsored": false
+  },
+  {
+    "id": "5",
+    "slug": "quantum-computing-industrialization-outlook",
+    "title": "Quantum Computing Industrialization: A Measured Outlook",
+    "track": "general-china-tech",
+    "description": "A sober look at where quantum hardware is actually creating industrial value today.",
+    "content": "<p>Beyond the hype cycle, value is emerging in simulation and optimization pilots. We map the realistic near-term surface area.</p>",
+    "publishDate": "2026-07-20",
+    "contentType": "niche",
+    "contentForm": "evergreen",
+    "tags": [
+      "quantum",
+      "deep-tech"
+    ],
+    "status": "published",
+    "author": "SinoTechLens",
+    "sponsored": false
+  },
+  {
+    "id": "6",
+    "slug": "choosing-overseas-gpu-cloud-sponsored",
+    "title": "Choosing Overseas GPU Cloud for AI Workloads (Sponsored)",
+    "track": "ai-digital-software",
+    "description": "A sponsored guide to selecting GPU cloud regions for cross-border AI teams.",
+    "content": "<p>This article is sponsored. We outline the trade-offs of region selection, bandwidth and compliance for teams training models outside mainland China.</p>",
+    "publishDate": "2026-08-01",
+    "contentType": "supplementary",
+    "contentForm": "evergreen",
+    "tags": [
+      "gpu",
+      "cloud",
+      "sponsored"
+    ],
+    "status": "published",
+    "author": "Partner",
+    "sponsored": true
+  },
+  {
+    "id": "7",
+    "slug": "spatial-computing-beyond-the-headset-draft",
+    "title": "Spatial Computing Beyond the Headset",
+    "track": "ai-digital-software",
+    "description": "Draft content pending editor review....",
+    "content": "<p>Draft content pending editor review.</p>",
+    "publishDate": "2026-08-10",
+    "contentType": "core",
+    "contentForm": "evergreen",
+    "tags": [
+      "spatial",
+      "ar"
+    ],
+    "status": "draft",
+    "author": "SinoTechLens",
+    "sponsored": false,
+    "scheduledDate": null,
+    "metaDescription": "",
+    "focusKeyword": "",
+    "ogImage": "",
+    "seo": {
+      "metaDescription": "",
+      "focusKeyword": "",
+      "ogImage": ""
+    }
+  },
+  {
+    "id": "imp-1",
+    "slug": "china-next-new-three-ai-robotics-biopharma",
+    "title": "China's \"Next New Three\": How AI, Robotics, and Biopharma Are Redefining the Export Powerhouse",
+    "track": "general-china-tech",
+    "description": "China is pivoting from EVs and solar to AI, robotics, and innovative drugs as its next growth engine—reshaping both its economy and global supply chains.",
+    "content": "<p>For two decades, the world knew China as the factory for everything from sneakers to smartphones. In recent years that identity narrowed around the \"New Three\"—electric vehicles, lithium batteries, and solar panels—which became the backbone of Chinese exports. Now, in 2026, a new chapter is opening, and Beijing's policymakers have a name for it: the \"Next New Three.\"</p>\n<p>The trio is artificial intelligence, robotics, and innovative drugs. Together they mark the most significant upgrade in China's industrial and export model since the country joined the global manufacturing mainstream. The shift is not cosmetic. It signals a move from exporting manufacturing <em>capacity</em> to exporting high-end <em>innovation</em>—original research, core technologies, and services rather than volume and cost.</p>\n<p>The numbers tell the story. According to People's Daily, domestic large-language models registered 36.11 trillion token calls in the week of July 13–19 alone, up nearly 31% week-on-week and climbing for eight straight weeks. In the first half of 2026, China's robotics exports reached 6.29 billion yuan (about $929 million), reaching 141 countries and regions, with high-end surgical robots surging 3.3-fold year-on-year. The innovative-drug sector posted outbound technology-licensing deals totaling $110 billion in the first six months, and Chinese companies accounted for eight of the world's top ten pharma licensing deals.</p>\n<p>What makes this wave different is how visibly it is going global. Four-legged inspection robots from Hangzhou-based DEEP Robotics are now deployed at Switzerland's Leibstadt Nuclear Power Plant, the country's largest, performing autonomous 24/7 inspections in high-risk zones. Shenzhen's DoBot ships coffee-making robotic arms to airports, rail stations, and malls across more than 20 venue types worldwide, with one Mediterranean installation serving drinks unmanned for Coca-Cola. iFLYTEK's AI teaching system is supporting Chinese-language education in Thai schools.</p>\n<p>At home, the ecosystem is accelerating. In April 2026, Beijing's Yizhuang district hosted a humanoid-robot half-marathon—a symbolic moment for an embodied-AI sector that now counts more than 230 companies and over 400 whole-machine product releases. That same month, Beijing's first \"token factory\" opened in Yizhuang with phase-one daily capacity above 1.4 trillion tokens, designed to link with green-power bases in Zhangjiakou and Ulanqab toward a long-term target of 10 trillion tokens per day.</p>\n<p>The macro backdrop matters. In the first half of 2026, Chinese exports of high-tech and high-value-added mechanical and electronic products reached 7.58 trillion yuan ($1.12 trillion), up 18.4% year-on-year, while shipments of green new-energy products—lithium batteries, solar panels, wind turbines—rose roughly 40%. The National Development and Reform Commission estimates that six emerging pillar industries (integrated circuits, aerospace, biomedicine, low-altitude economy, new storage, and smart robotics) were worth nearly 6 trillion yuan in 2025 and could exceed 10 trillion yuan by 2030.</p>\n<p>The strategic implication is clear. While the \"New Three\" secure China's trade fundamentals, the \"Next New Three\" seize the commanding heights of future industries. For overseas readers, the takeaway is not just that Chinese products are improving—it's that the country is now exporting the <em>software, robotics, and biotech</em> that other nations will build their own industries on.</p>",
+    "publishDate": "2026-08-05",
+    "contentType": "core",
+    "contentForm": "evergreen",
+    "tags": [
+      "china-tech",
+      "export",
+      "ai",
+      "robotics",
+      "biopharma"
+    ],
+    "status": "published",
+    "author": "SinoTechLens",
+    "sponsored": false,
+    "seo": {
+      "metaDescription": "China is pivoting from EVs and solar to AI, robotics, and innovative drugs as its next growth engine—reshaping both its economy and global supply chains.",
+      "focusKeyword": "China Next New Three"
+    }
+  },
+  {
+    "id": "imp-2",
+    "slug": "beyond-moores-law-huawei-tau-scaling-china-chip-story",
+    "title": "Beyond Moore's Law: How Huawei's \"Tau Scaling\" and a Domestic Supply Chain Are Rewriting China's Chip Story",
+    "track": "semiconductor-hardware",
+    "description": "Facing export controls, China is betting on architectural innovation—Huawei's Tau Law, advanced packaging, and supernodes—plus a fast-localizing equipment base.",
+    "content": "<p>For sixty years the semiconductor industry ran on a single gospel: shrink the transistor, and everything gets faster. Moore's Law delivered every generation of computing we know. But it is running out of physical and economic road—and for Huawei, the most advanced manufacturing tools have been off-limits since 2022. So in May 2026, at the IEEE International Symposium on Circuits and Systems in Shanghai, Huawei's semiconductor chief He Tingbo proposed a different path: the \"Tau (τ) Scaling Law.\"</p>\n<p>Where Moore's Law asks \"how small can a transistor be,\" Tau Law asks \"how fast can information move through a chip?\" The unit of progress shifts from geometry to time—signal propagation, memory access, interconnect, and synchronization latency. Huawei's practical implementation is \"LogicFolding,\" which stacks circuits vertically like adding floors to a building instead of spreading them flat. The company says this already yields 55% higher transistor density and 41% better power efficiency than conventional designs, and that it has mass-produced 381 such chips over six years. The first flagship Kirin chip to fully adopt LogicFolding is set to ship in fall 2026, with a target of reaching 1.4-nanometer-equivalent transistor density by 2031.</p>\n<p>Huawei is not alone in betting on architecture over lithography. At WAIC 2026, more than 100 computing-chip firms showed 200+ products, with 67 debuting for the first time. Huawei's Ascend 950 supernode connected 1,024 NPUs with 1 EFLOPS of FP8 compute and 3-microsecond cluster latency. Biren, MetaX, Enflame, and Moore Threads all pivoted toward supernode products, while Dongfang Suanxin's DF1000 uses mature 14nm process with 3D-stacked near-memory computing to claim \"14nm ≈ 4nm\" equivalent performance.</p>\n<p>Memory is closing a gap, too. ChangXin Memory Technologies (CXMT) is finishing validation of its first LPDDR6 chip—12.8 Gbps peak, 10.7 Gbps with a paired SoC—with small-batch introduction possible in late 2026 and volume production in the first half of 2027. And in July 2026, Chipone announced mass production of ICNA3611, China's first OLED display-touch integrated (TDDI) chip, in a mainstream consumer device—ending reliance on overseas suppliers for high-end display drivers.</p>\n<p>The supply chain underneath all this is localizing fast. Domestic semiconductor equipment localization rose from 25% at the end of 2024 to 35% in 2025, and on new wafer-fab lines domestically made equipment hit 55% of procurement value by end-2025, ahead of the national 50% target. SMIC ran at 93.1% utilization in Q1 2026; Hua Hong hit 99.7%. In the first four months of 2026, China exported 117 billion integrated circuits worth $103.5 billion, up 83.7% in value year-on-year.</p>\n<p>China also dominates the \"nerves\" of AI infrastructure. Chinese firms hold seven of the world's top-ten optical-module slots with over 60% combined market share; Zhongji InnoLight alone commands 40%+ of the 800G market and an estimated 50–70% of the 1.6T segment, supplying Nvidia, Google, and Amazon.</p>\n<p>The honest caveat: without EUV lithography, China remains two to three generations behind on the finest nodes, and advanced-capacity constraints are real. But the strategic point stands. Export controls have not stopped Chinese AI—they have redirected it toward a home-grown stack built on architectural ingenuity, advanced packaging, and scale. For the rest of the world, that means a credible second source of AI compute is quietly taking shape.</p>",
+    "publishDate": "2026-08-04",
+    "contentType": "core",
+    "contentForm": "evergreen",
+    "tags": [
+      "semiconductor",
+      "huawei",
+      "chip",
+      "supply-chain"
+    ],
+    "status": "published",
+    "author": "SinoTechLens",
+    "sponsored": false,
+    "seo": {
+      "metaDescription": "Facing export controls, China is betting on architectural innovation—Huawei's Tau Law, advanced packaging, and supernodes—plus a fast-localizing equipment base.",
+      "focusKeyword": "China semiconductor"
+    }
+  },
+  {
+    "id": "imp-3",
+    "slug": "deepseek-v4-open-source-bet-nvidia-huawei-silicon",
+    "title": "DeepSeek-V4 and the Open-Source Bet: Why China's Flagship Model Runs on Both Nvidia and Huawei Silicon",
+    "track": "ai-digital-software",
+    "description": "DeepSeek-V4 brings a 1-million-token context, MIT-licensed openness, and dual Nvidia/Ascend support—anchoring China's software stack to its own hardware.",
+    "content": "<p>On April 24, 2026, DeepSeek released V4 and did something that reframed the open-source AI conversation: it shipped a 1-million-token context window as a <em>default</em> feature, published the weights under the permissive MIT license, and—crucially—validated its inference path on both Nvidia GPUs and Huawei's Ascend NPUs. For a global developer audience, it was a clear signal that China's leading lab is building software explicitly designed to run on Chinese hardware.</p>\n<p>The architecture is the headline. DeepSeek-V4 uses a mixture-of-experts design with two versions: a 1.6-trillion-parameter Pro model (49B active) and a 284-billion-parameter Flash model (13B active). The real innovation is in attention. A combined Compressed Sparse Attention (CSA) and Heavily Compressed Attention (HCA) scheme compresses the token dimension so aggressively that at 1M context, per-token inference FLOPs fall to 27% of the previous V3.2 generation and KV-cache memory to just 10%. In plain terms: million-token context stops being a luxury and becomes a baseline anyone can afford.</p>\n<p>Benchmarks put V4 at the front of the open-source pack. On SWE-bench Verified it scored 80.6%—tied with Gemini 3.1 Pro and the highest of any open model—and it posted 93.5 on LiveCodeBench, a Codeforces rating of 3206, 87.5% on MMLU-Pro, and 90.1% on GPQA Diamond. Pricing was cut by 75% at launch: V4-Pro at $0.435 in / $0.87 out per million tokens, and V4-Flash at $0.14 / $0.28—roughly 5 to 30 times cheaper than closed frontier models, with the code fully open.</p>\n<p>The strategic twist is the hardware duality. DeepSeek explicitly verified its fine-grained expert-parallel (EP) scheme on both Nvidia and Huawei Ascend, and its technical report lists Ascend alongside Nvidia in the hardware-validation section. At least eight domestic chipmakers—Huawei Ascend, Cambricon, Hygon, Moore Threads, MetaX, Kunlunxin, T-Head, and Iluvatar—have announced V4 adaptation plans. In April, the China Academy of Information and Communications Technology even launched a national V4 localization-compatibility test, an unprecedented move for a model release.</p>\n<p>This is the \"same-frequency iteration\" moment: Chinese models and Chinese chips are now evolving in lockstep. DeepSeek has also optimized V4 specifically for Huawei silicon ahead of the Ascend 950 supernode's volume rollout, which it expects will sharply lower Pro-tier serving costs in the second half of 2026.</p>\n<p>The business scale matches the technical ambition. In June 2026, DeepSeek closed its first external funding round at over 50 billion yuan (about $7.4 billion)—the largest single round in Chinese AI history—at a valuation near 338 billion yuan (about $50 billion), with investors spanning its founder, Tencent, CATL, JD, NetEase, and the state AI fund.</p>\n<p>For overseas developers, the practical meaning is simple: a top-tier, MIT-licensed model that you can self-host, fine-tune, and run on non-U.S. hardware is now a real option. Whether you deploy on Nvidia or Ascend, the weights are the same. That portability is exactly what a fragmented, sanctions-shaped world is starting to demand.</p>",
+    "publishDate": "2026-08-03",
+    "contentType": "core",
+    "contentForm": "evergreen",
+    "tags": [
+      "deepseek",
+      "open-source",
+      "llm",
+      "ai"
+    ],
+    "status": "published",
+    "author": "SinoTechLens",
+    "sponsored": false,
+    "seo": {
+      "metaDescription": "DeepSeek-V4 brings a 1-million-token context, MIT-licensed openness, and dual Nvidia/Ascend support—anchoring China's software stack to its own hardware.",
+      "focusKeyword": "DeepSeek open source"
+    }
+  },
+  {
+    "id": "imp-4",
+    "slug": "china-advanced-manufacturing-machine-going-global",
+    "title": "From Lithium to Robots: Inside China's Advanced-Manufacturing Machine That's Going Global",
+    "track": "green-tech-manufacturing",
+    "description": "Smart factories, battery gigafactories, and export-ready robots show how China's green and advanced manufacturing is scaling fast and shipping worldwide.",
+    "content": "<p>China's manufacturing story in 2026 is no longer just about scale—it's about speed, automation, and export reach. The through-line connects a battery pack that rolls off a line every two minutes to surgical robots shipping to 141 countries, and it explains why global analysts now call China the \"indispensable supplier\" for the world's green transition.</p>\n<p>Start with the factory floor. In Zaozhuang, Shandong—a city once built on coal—Shandong Jidian's battery-pack workshop runs at 90% automation, with a new pack completed in under two minutes. Around it, Sunwoda, Geely-Sunwoda, and others form a lithium supply chain that has physically remade the local economy. In the Shenzhen-Shanwei cooperation zone, BYD's auto park shipped more than 160,000 vehicles in the first half of 2026 and pulled in over 30 supply-chain companies, anchoring a hundred-billion-yuan EV cluster. Beijing's Future Science City, meanwhile, hosts the country's first national cluster for synthetic-bio manufacturing, with 160+ firms covering the full chain from gene design to finished materials.</p>\n<p>The macro weight is large. The National Development and Reform Commission counts six emerging pillar industries—integrated circuits, aerospace, biomedicine, low-altitude economy, new storage, and smart robotics—at nearly 6 trillion yuan in 2025, with a path to 10 trillion yuan by 2030. In the first half of 2026, exports of green new-energy products (lithium batteries, solar panels, wind turbines) rose about 40% year-on-year, and high-tech, high-value-added mechanical and electronic exports hit $1.12 trillion, up 18.4%.</p>\n<p>What's new is the <em>kind</em> of manufacturing going out. Robotics exports reached 6.29 billion yuan in H1 2026, with high-end surgical robots up 3.3-fold. DEEP Robotics' quadruped inspectors now patrol Switzerland's largest nuclear plant. DoBot's coffee robots operate in airports and malls across more than 20 venue types, including unmanned Coca-Cola stations along the Mediterranean. These are not cheap assembly exports; they are integrated hardware-plus-AI products solving specific problems abroad.</p>\n<p>Policy is steering this deliberately. As the 15th Five-Year Plan opens, Beijing is prioritizing \"new quality productive forces,\" pushing AI into R&D, production, and operations, and backing zero-carbon industrial parks that fuse energy optimization, process re-engineering, and digital management. The hydrogen industry chain—green production, storage, fuel cells—is a named breakthrough area, with scaled demonstration and cost declines expected through the decade.</p>\n<p>The global context sharpens the contrast. As some developed economies dial back green commitments under energy-security pressure, China's strategic patience and manufacturing base position it to absorb both domestic demand and export opportunity. For importers facing carbon-border mechanisms like the EU's CBAM, Chinese green hardware is increasingly the default, cost-effective option.</p>\n<p>The honest limits remain: high-end autonomous-driving SoCs and certain industrial-control chips are still maturing, and over-capacity in some segments invites price wars Beijing is trying to curb. But the trajectory is unambiguous. China's advanced-manufacturing machine is not only scaling at home—it is shipping robots, batteries, and smart systems worldwide, and rewriting what \"Made in China\" means for a decarbonizing planet.</p>",
+    "publishDate": "2026-08-02",
+    "contentType": "core",
+    "contentForm": "evergreen",
+    "tags": [
+      "manufacturing",
+      "green-tech",
+      "robotics"
+    ],
+    "status": "published",
+    "author": "SinoTechLens",
+    "sponsored": false,
+    "seo": {
+      "metaDescription": "Smart factories, battery gigafactories, and export-ready robots show how China's green and advanced manufacturing is scaling fast and shipping worldwide.",
+      "focusKeyword": "China advanced manufacturing"
+    }
+  }
+]

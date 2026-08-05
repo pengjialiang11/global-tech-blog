@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /admin-login
+Disallow: /cms
+Disallow: /api
+
+Sitemap: https://sinotechlens.com/sitemap.xml
