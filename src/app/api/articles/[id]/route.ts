@@ -1,12 +1,10 @@
 import { NextResponse } from "next/server";
 import { NextRequest } from "next/server";
-import fs from "fs";
-import path from "path";
-import { getArticleById } from "@/lib/articleData";
+import { readJson, writeJson } from "@/lib/store";
 import { getHardViolations } from "@/lib/compliance";
 import { requireAuth } from "@/lib/api-auth";
 
-const getFilePath = () => path.resolve(process.cwd(), "src", "data", "articles.json");
+const ARTICLES_PATH = "src/data/articles.json";
 
 export async function GET(
   request: NextRequest,
@@ -17,7 +15,8 @@ export async function GET(
 
   try {
     const { id } = await params;
-    const article = getArticleById(id, true);
+    const articles = await readJson(ARTICLES_PATH);
+    const article = articles.find((art: any) => art.id === id);
     if (!article) {
       return NextResponse.json({ success: false, message: "Article not found" }, { status: 404 });
     }
@@ -53,8 +52,7 @@ export async function PUT(
       return NextResponse.json({ success: false, message: "Blocked by compliance", violations: hard }, { status: 422 });
     }
 
-    const fileContent = fs.readFileSync(getFilePath(), "utf8");
-    const articles = JSON.parse(fileContent);
+    const articles = await readJson(ARTICLES_PATH);
     const index = articles.findIndex((art: any) => art.id === id);
     if (index === -1) {
       return NextResponse.json({ success: false, message: "Article not found" }, { status: 404 });
@@ -71,7 +69,7 @@ export async function PUT(
       seo: body.seo || articles[index].seo || {},
     };
     articles[index] = merged;
-    fs.writeFileSync(getFilePath(), JSON.stringify(articles, null, 2));
+    await writeJson(ARTICLES_PATH, articles);
     return NextResponse.json({ success: true, article: articles[index] });
   } catch (error) {
     console.error("Failed to update article:", error);
@@ -88,10 +86,12 @@ export async function DELETE(
 
   try {
     const { id } = await params;
-    const fileContent = fs.readFileSync(getFilePath(), "utf8");
-    const articles = JSON.parse(fileContent);
+    const articles = await readJson(ARTICLES_PATH);
     const filteredArticles = articles.filter((art: any) => art.id !== id);
-    fs.writeFileSync(getFilePath(), JSON.stringify(filteredArticles, null, 2));
+    if (filteredArticles.length === articles.length) {
+      return NextResponse.json({ success: false, message: "Article not found" }, { status: 404 });
+    }
+    await writeJson(ARTICLES_PATH, filteredArticles);
     return NextResponse.json({ success: true });
   } catch (error) {
     console.error("Failed to delete article:", error);

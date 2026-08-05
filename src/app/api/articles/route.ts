@@ -1,12 +1,19 @@
 import { NextResponse } from "next/server";
 import { NextRequest } from "next/server";
-import fs from "fs";
-import path from "path";
-import { getAllArticles } from "@/lib/articleData";
+import { readJson, writeJson } from "@/lib/store";
 import { getHardViolations } from "@/lib/compliance";
 import { requireAuth } from "@/lib/api-auth";
 
-const dataFilePath = path.resolve(process.cwd(), "src", "data", "articles.json");
+const ARTICLES_PATH = "src/data/articles.json";
+
+function isPublic(a: any, now = Date.now()): boolean {
+  if (a.status && a.status !== "published") return false;
+  if (a.scheduledDate) {
+    const t = new Date(a.scheduledDate).getTime();
+    if (!Number.isNaN(t) && t > now) return false;
+  }
+  return true;
+}
 
 export async function GET(request: NextRequest) {
   try {
@@ -19,8 +26,12 @@ export async function GET(request: NextRequest) {
       if (authError) return authError;
     }
 
-    const articles = getAllArticles(includeDrafts);
-    return NextResponse.json({ success: true, articles });
+    const articles = await readJson(ARTICLES_PATH);
+    const filtered = includeDrafts ? articles : articles.filter((a: any) => isPublic(a));
+    filtered.sort(
+      (a: any, b: any) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime()
+    );
+    return NextResponse.json({ success: true, articles: filtered });
   } catch (error) {
     console.error("Failed to fetch articles:", error);
     return NextResponse.json({ success: false, message: "Failed to fetch articles" }, { status: 500 });
@@ -58,8 +69,7 @@ export async function POST(request: NextRequest) {
       body.description = plainText.slice(0, 120) + "...";
     }
 
-    const fileContent = fs.readFileSync(dataFilePath, "utf8");
-    const articles = JSON.parse(fileContent);
+    const articles = await readJson(ARTICLES_PATH);
 
     const newArticle = {
       id: String(Date.now()),
@@ -80,7 +90,7 @@ export async function POST(request: NextRequest) {
     };
 
     articles.unshift(newArticle);
-    fs.writeFileSync(dataFilePath, JSON.stringify(articles, null, 2));
+    await writeJson(ARTICLES_PATH, articles);
     return NextResponse.json({ success: true, article: newArticle });
   } catch (error) {
     console.error("Failed to create article:", error);

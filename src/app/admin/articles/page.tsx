@@ -30,7 +30,17 @@ export default function AdminArticlesPage() {
 
   const remove = async (id: string) => {
     if (!confirm("Delete this article? This cannot be undone.")) return;
-    await fetch(`/api/articles/${id}`, { method: "DELETE" });
+    try {
+      const res = await fetch(`/api/articles/${id}`, { method: "DELETE" });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok || !data.success) {
+        alert("Delete failed: " + (data.message || `HTTP ${res.status}`));
+        return;
+      }
+    } catch {
+      alert("Network error during delete. Please try again.");
+      return;
+    }
     load();
   };
 

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { TRACKS } from "@/lib/tracks";
 import { getHardViolations, getSoftWarnings } from "@/lib/compliance";
@@ -61,6 +61,53 @@ export default function ArticleForm({ mode, initial = {}, articleId }: Props) {
   const [slugTouched, setSlugTouched] = useState(mode === "edit");
   const [open, setOpen] = useState({ publish: true, meta: false, seo: false });
   const [saving, setSaving] = useState(false);
+  const [uploading, setUploading] = useState(false);
+  const [imgUrl, setImgUrl] = useState("");
+  const contentRef = useRef<HTMLTextAreaElement>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
+
+  const insertAtCursor = (snippet: string) => {
+    const el = contentRef.current;
+    const start = el?.selectionStart ?? form.content.length;
+    const end = el?.selectionEnd ?? form.content.length;
+    const next = form.content.slice(0, start) + snippet + form.content.slice(end);
+    setForm((prev) => ({ ...prev, content: next }));
+    requestAnimationFrame(() => {
+      if (!el) return;
+      el.focus();
+      const pos = start + snippet.length;
+      el.setSelectionRange(pos, pos);
+    });
+  };
+
+  const handleUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    setUploading(true);
+    try {
+      const fd = new FormData();
+      fd.append("file", file);
+      const res = await fetch("/api/upload", { method: "POST", body: fd });
+      const data = await res.json();
+      if (data.success) {
+        insertAtCursor(`<img src="${data.url}" alt="${file.name}" style="max-width:100%;height:auto;" />`);
+      } else {
+        alert("Upload failed: " + (data.message || "unknown error"));
+      }
+    } catch {
+      alert("Upload error, please try again.");
+    } finally {
+      setUploading(false);
+      if (fileInputRef.current) fileInputRef.current.value = "";
+    }
+  };
+
+  const insertFromUrl = () => {
+    const url = imgUrl.trim();
+    if (!url) return;
+    insertAtCursor(`<img src="${url}" alt="" style="max-width:100%;height:auto;" />`);
+    setImgUrl("");
+  };
 
   const setField = <K extends keyof ArticleFormData>(key: K, value: ArticleFormData[K]) => {
     setForm((prev) => ({ ...prev, [key]: value }));
@@ -165,15 +212,49 @@ export default function ArticleForm({ mode, initial = {}, articleId }: Props) {
 
         <div>
           <label className={label}>Article Content</label>
+          {/* Image insertion toolbar */}
+          <div className="flex flex-wrap items-center gap-2 mb-2 p-2 border rounded-lg bg-gray-50">
+            <input
+              ref={fileInputRef}
+              type="file"
+              accept="image/*"
+              className="hidden"
+              onChange={handleUpload}
+            />
+            <button
+              type="button"
+              onClick={() => fileInputRef.current?.click()}
+              disabled={uploading}
+              className="inline-flex items-center gap-1 bg-white border border-gray-300 px-3 py-1.5 rounded-md text-sm hover:bg-gray-100 disabled:opacity-50"
+            >
+              {uploading ? "Uploading…" : "📷 Upload Image"}
+            </button>
+            <input
+              type="text"
+              value={imgUrl}
+              onChange={(e) => setImgUrl(e.target.value)}
+              onKeyDown={(e) => { if (e.key === "Enter") { e.preventDefault(); insertFromUrl(); } }}
+              placeholder="…or paste an image URL"
+              className="flex-1 min-w-[160px] border border-gray-300 rounded-md px-2 py-1.5 text-sm"
+            />
+            <button
+              type="button"
+              onClick={insertFromUrl}
+              className="border border-gray-300 px-3 py-1.5 rounded-md text-sm hover:bg-gray-100"
+            >
+              Insert URL
+            </button>
+          </div>
           <textarea
+            ref={contentRef}
             rows={14}
             value={form.content}
             onChange={(e) => setField("content", e.target.value)}
             className={`${input} font-mono text-sm`}
-            placeholder="Paste your article HTML or plain text here..."
+            placeholder="Paste your article HTML or plain text here... Use the toolbar above to add images."
             required
           />
-          <p className="text-xs text-gray-500 mt-1">Accepts HTML. Paste your article body directly.</p>
+          <p className="text-xs text-gray-500 mt-1">Accepts HTML. Paste your article body directly, or insert images with the toolbar above.</p>
         </div>
       </div>
 
