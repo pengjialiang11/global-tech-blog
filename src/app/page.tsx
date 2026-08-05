@@ -66,40 +66,8 @@ export default function HomePage() {
         <AdSense slot="1234567890" />
       </div>
 
-      {/* SECTIONS grid — inspired by the screenshot reference */}
-      <section className="max-w-6xl mx-auto px-4 sm:px-6 py-14">
-        <h2 className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-6">Sections</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-          {TRACKS.map((track) => {
-            const count = getArticlesByTrack(track.slug).length;
-            const style = trackStyles[track.slug];
-            return (
-              <Link
-                key={track.slug}
-                href={`/topics/${track.slug}`}
-                className={`group block p-6 sm:p-8 rounded-xl border ${style.bg} ${style.border} hover:shadow-md transition-shadow`}
-              >
-                <div className="flex items-start justify-between mb-3">
-                  <h3 className={`text-xl font-bold ${style.text}`}>{track.name}</h3>
-                  <span className={`text-xs font-semibold px-2.5 py-1 rounded-full ${style.badge}`}>
-                    {count} {count === 1 ? "article" : "articles"}
-                  </span>
-                </div>
-                <p className="text-gray-700 leading-relaxed mb-4">{track.description}</p>
-                <span className={`inline-flex items-center text-sm font-semibold ${style.text} group-hover:underline`}>
-                  Read the section
-                  <svg className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </span>
-              </Link>
-            );
-          })}
-        </div>
-      </section>
-
       {/* Latest articles */}
-      <section className="max-w-6xl mx-auto px-4 sm:px-6 pb-16">
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 pt-14 pb-10">
         <div className="flex items-end justify-between mb-8">
           <div>
             <h2 className="text-2xl font-bold">Latest Articles</h2>
@@ -130,6 +98,38 @@ export default function HomePage() {
                 <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3">{article.description}</p>
                 <p className="text-xs text-gray-500">{article.publishDate}</p>
               </article>
+            );
+          })}
+        </div>
+      </section>
+
+      {/* SECTIONS grid — inspired by the screenshot reference */}
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 pb-16">
+        <h2 className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-6">Sections</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          {TRACKS.map((track) => {
+            const count = getArticlesByTrack(track.slug).length;
+            const style = trackStyles[track.slug];
+            return (
+              <Link
+                key={track.slug}
+                href={`/topics/${track.slug}`}
+                className={`group block p-6 sm:p-8 rounded-xl border ${style.bg} ${style.border} hover:shadow-md transition-shadow`}
+              >
+                <div className="flex items-start justify-between mb-3">
+                  <h3 className={`text-xl font-bold ${style.text}`}>{track.name}</h3>
+                  <span className={`text-xs font-semibold px-2.5 py-1 rounded-full ${style.badge}`}>
+                    {count} {count === 1 ? "article" : "articles"}
+                  </span>
+                </div>
+                <p className="text-gray-700 leading-relaxed mb-4">{track.description}</p>
+                <span className={`inline-flex items-center text-sm font-semibold ${style.text} group-hover:underline`}>
+                  Read the section
+                  <svg className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </span>
+              </Link>
             );
           })}
         </div>

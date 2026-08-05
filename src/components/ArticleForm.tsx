@@ -128,10 +128,17 @@ export default function ArticleForm({ mode, initial = {}, articleId }: Props) {
 
   const validateAndSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!form.slug.match(/^[a-z0-9]+(-[a-z0-9]+)*$/)) {
+    // Auto-generate slug from title if empty
+    let finalSlug = form.slug.trim();
+    if (!finalSlug) {
+      finalSlug = slugify(form.title);
+      setField("slug", finalSlug);
+    }
+    if (!finalSlug.match(/^[a-z0-9]+(-[a-z0-9]+)*$/)) {
       alert("URL Slug must be lowercase letters, numbers, and hyphens only.");
       return;
     }
+    const payloadSlug = finalSlug;
 
     const text = `${form.title}\n${form.content}`;
     const violations = getHardViolations(text);
@@ -148,6 +155,7 @@ export default function ArticleForm({ mode, initial = {}, articleId }: Props) {
     setSaving(true);
     const payload = {
       ...form,
+      slug: payloadSlug,
       tags: [],
       scheduledDate: form.scheduledDate || null,
       sponsored: Boolean(form.sponsored),
@@ -205,7 +213,7 @@ export default function ArticleForm({ mode, initial = {}, articleId }: Props) {
           </div>
           <div>
             <label className={label}>URL Slug <span className="text-gray-400 font-normal">(auto)</span></label>
-            <input type="text" value={form.slug} onChange={(e) => handleSlugChange(e.target.value)} className={`${input} font-mono text-sm`} required />
+            <input type="text" value={form.slug} onChange={(e) => handleSlugChange(e.target.value)} className={`${input} font-mono text-sm`} placeholder="Leave empty to auto-generate from title" />
             <p className="text-xs text-gray-500 mt-1">/articles/{form.slug || "..."}</p>
           </div>
         </div>

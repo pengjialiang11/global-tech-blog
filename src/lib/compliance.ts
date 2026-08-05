@@ -7,12 +7,16 @@ export interface ComplianceHit {
   matched: string;
 }
 
-// 硬红线关键词（中英文，覆盖投资指导/收益承诺/加密金融等）
+// 硬红线关键词（中英文，覆盖投资指导/收益承诺/政治敏感等）
 const HARD_PATTERNS: { rule: string; pattern: RegExp }[] = [
   { rule: "投资指导/行情预测", pattern: /(投资指导|行情预测|抄底|建仓|买卖点|trading tip|investment advice|price prediction)/i },
   { rule: "收益承诺", pattern: /(稳赚|保收益|保本|高额回报| guaranteed return|risk-free profit| guaranteed profit)/i },
-  { rule: "代币/加密货币交易", pattern: /(\b代币\b|ico\b|id[oe]\b| defi\b| 交易所\b| 加密货币(交易|炒作)|crypto trading|coin listing|token sale)/i },
   { rule: "政治敏感", pattern: /(政变|颠覆|游行示威|敏感人物|政治献金)/i },
+];
+
+// 软提示：加密货币/代币/Web3 相关内容仅做提醒，不拦截发布
+const SOFT_PATTERNS: { rule: string; pattern: RegExp }[] = [
+  { rule: "加密货币/代币/Web3 内容，请自行核对监管边界", pattern: /(\b代币\b|ico\b|id[oe]\b| defi\b| 交易所\b| 加密货币(交易|炒作)|crypto trading|coin listing|token sale|blockchain|web3)/i },
 ];
 
 // 软红线：Web3/区块链仅限官方落地技术（数字人民币/政务联盟链/区块链存证溯源）
@@ -32,7 +36,12 @@ export function checkCompliance(text: string): ComplianceHit[] {
     if (m) hits.push({ level: "hard", rule, matched: m[0] });
   }
 
-  // 软红线仅在命中 Web3 泛词、且未命中官方落地技术时提示
+  for (const { rule, pattern } of SOFT_PATTERNS) {
+    const m = sample.match(pattern);
+    if (m) hits.push({ level: "soft", rule, matched: m[0] });
+  }
+
+  // 软红线：Web3/区块链仅在命中泛词且未命中官方落地技术时提示
   const hasWeb3 = WEB3_GENERAL.test(sample);
   const hasOfficial = WEB3_OFFICIAL.test(sample);
   if (hasWeb3 && !hasOfficial) {
