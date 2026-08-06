@@ -39,10 +39,10 @@ export default function HomePage() {
       <section className="bg-white border-b">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-20 text-center">
           <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-gray-900 mb-5">
-            China Tech, in English
+            Welcome to SinoTechLens
           </h1>
           <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto mb-8 leading-relaxed">
-            Independent analysis of China&apos;s frontier tech — semiconductors, AI, green energy and advanced manufacturing — for a global audience.
+            Independent English blog tracking real-world industrial deployment of China&apos;s breakthrough technologies and global cross-border tech shifts.
           </p>
           <div className="flex justify-center gap-3">
             <Link
@@ -50,12 +50,6 @@ export default function HomePage() {
               className="inline-block bg-black text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-800 transition-colors"
             >
               Browse All Articles
-            </Link>
-            <Link
-              href="/about"
-              className="inline-block border px-6 py-3 rounded-lg font-medium hover:bg-gray-50 transition-colors"
-            >
-              About Us
             </Link>
           </div>
         </div>
