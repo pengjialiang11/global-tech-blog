@@ -72,8 +72,9 @@ export async function PUT(
     await writeJson(ARTICLES_PATH, articles);
     return NextResponse.json({ success: true, article: articles[index] });
   } catch (error) {
-    console.error("Failed to update article:", error);
-    return NextResponse.json({ success: false, message: "Failed to update article" }, { status: 500 });
+    const detail = error instanceof Error ? error.message : String(error);
+    console.error("Failed to update article:", detail);
+    return NextResponse.json({ success: false, message: "Failed to update article", detail }, { status: 500 });
   }
 }
 
@@ -94,7 +95,8 @@ export async function DELETE(
     await writeJson(ARTICLES_PATH, filteredArticles);
     return NextResponse.json({ success: true });
   } catch (error) {
-    console.error("Failed to delete article:", error);
-    return NextResponse.json({ success: false, message: "Failed to delete article" }, { status: 500 });
+    const detail = error instanceof Error ? error.message : String(error);
+    console.error("Failed to delete article:", detail);
+    return NextResponse.json({ success: false, message: "Failed to delete article", detail }, { status: 500 });
   }
 }

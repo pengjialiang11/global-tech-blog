@@ -172,7 +172,8 @@ export default function ArticleForm({ mode, initial = {}, articleId }: Props) {
         router.push("/admin/articles");
         router.refresh();
       } else {
-        alert("Failed: " + (data.message || ""));
+        const detail = data.detail ? "\n\nDetails: " + data.detail : "";
+        alert("Failed: " + (data.message || "") + detail);
       }
     } catch {
       alert("Network error, please try again.");

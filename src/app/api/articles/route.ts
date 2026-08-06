@@ -93,7 +93,8 @@ export async function POST(request: NextRequest) {
     await writeJson(ARTICLES_PATH, articles);
     return NextResponse.json({ success: true, article: newArticle });
   } catch (error) {
-    console.error("Failed to create article:", error);
-    return NextResponse.json({ success: false, message: "Failed to create article" }, { status: 500 });
+    const detail = error instanceof Error ? error.message : String(error);
+    console.error("Failed to create article:", detail);
+    return NextResponse.json({ success: false, message: "Failed to create article", detail }, { status: 500 });
   }
 }

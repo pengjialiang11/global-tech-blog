@@ -21,8 +21,9 @@ export async function GET(request: NextRequest) {
     const filtered = track ? active.filter((a: any) => a.track === track) : active;
     return NextResponse.json({ success: true, affiliates: all ? list : filtered });
   } catch (error) {
-    console.error("Failed to fetch affiliates:", error);
-    return NextResponse.json({ success: false, message: "Failed to fetch affiliates" }, { status: 500 });
+    const detail = error instanceof Error ? error.message : String(error);
+    console.error("Failed to fetch affiliates:", detail);
+    return NextResponse.json({ success: false, message: "Failed to fetch affiliates", detail }, { status: 500 });
   }
 }
 
@@ -50,8 +51,9 @@ export async function POST(request: NextRequest) {
     await writeJson(AFFILIATES_PATH, list);
     return NextResponse.json({ success: true, affiliate: newItem });
   } catch (error) {
-    console.error("Failed to create affiliate:", error);
-    return NextResponse.json({ success: false, message: "Failed to create affiliate" }, { status: 500 });
+    const detail = error instanceof Error ? error.message : String(error);
+    console.error("Failed to create affiliate:", detail);
+    return NextResponse.json({ success: false, message: "Failed to create affiliate", detail }, { status: 500 });
   }
 }
 
@@ -69,8 +71,9 @@ export async function PUT(request: NextRequest) {
     await writeJson(AFFILIATES_PATH, list);
     return NextResponse.json({ success: true, affiliate: list[idx] });
   } catch (error) {
-    console.error("Failed to update affiliate:", error);
-    return NextResponse.json({ success: false, message: "Failed to update" }, { status: 500 });
+    const detail = error instanceof Error ? error.message : String(error);
+    console.error("Failed to update affiliate:", detail);
+    return NextResponse.json({ success: false, message: "Failed to update", detail }, { status: 500 });
   }
 }
 
@@ -90,7 +93,8 @@ export async function DELETE(request: NextRequest) {
     await writeJson(AFFILIATES_PATH, next);
     return NextResponse.json({ success: true });
   } catch (error) {
-    console.error("Failed to delete affiliate:", error);
-    return NextResponse.json({ success: false, message: "Failed to delete" }, { status: 500 });
+    const detail = error instanceof Error ? error.message : String(error);
+    console.error("Failed to delete affiliate:", detail);
+    return NextResponse.json({ success: false, message: "Failed to delete", detail }, { status: 500 });
   }
 }
