@@ -1,5 +1,26 @@
 [
   {
+    "id": "1786027711615",
+    "slug": "from-lithium-to-robots-inside-chinas-advanced-manufacturing-machine-thats-going-global",
+    "title": "From Lithium to Robots: Inside China's Advanced-Manufacturing Machine That's Going Global",
+    "track": "green-tech-manufacturing",
+    "description": "China's manufacturing story in 2026 is no longer just about scale—it's about speed, automation, and export reach. The th...",
+    "content": "China's manufacturing story in 2026 is no longer just about scale—it's about speed, automation, and export reach. The through-line connects a battery pack that rolls off a line every two minutes to surgical robots shipping to 141 countries, and it explains why global analysts now call China the \"indispensable supplier\" for the world's green transition.\n\nStart with the factory floor. In Zaozhuang, Shandong—a city once built on coal—Shandong Jidian's battery-pack workshop runs at 90% automation, with a new pack completed in under two minutes. Around it, Sunwoda, Geely-Sunwoda, and others form a lithium supply chain that has physically remade the local economy. In the Shenzhen-Shanwei cooperation zone, BYD's auto park shipped more than 160,000 vehicles in the first half of 2026 and pulled in over 30 supply-chain companies, anchoring a hundred-billion-yuan EV cluster. Beijing's Future Science City, meanwhile, hosts the country's first national cluster for synthetic-bio manufacturing, with 160+ firms covering the full chain from gene design to finished materials.\n\nThe macro weight is large. The National Development and Reform Commission counts six emerging pillar industries—integrated circuits, aerospace, biomedicine, low-altitude economy, new storage, and smart robotics—at nearly 6 trillion yuan in 2025, with a path to 10 trillion yuan by 2030. In the first half of 2026, exports of green new-energy products (lithium batteries, solar panels, wind turbines) rose about 40% year-on-year, and high-tech, high-value-added mechanical and electronic exports hit $1.12 trillion, up 18.4%.\n\nWhat's new is the *kind* of manufacturing going out. Robotics exports reached 6.29 billion yuan in H1 2026, with high-end surgical robots up 3.3-fold. DEEP Robotics' quadruped inspectors now patrol Switzerland's largest nuclear plant. DoBot's coffee robots operate in airports and malls across more than 20 venue types, including unmanned Coca-Cola stations along the Mediterranean. These are not cheap assembly exports; they are integrated hardware-plus-AI products solving specific problems abroad.\n\nPolicy is steering this deliberately. As the 15th Five-Year Plan opens, Beijing is prioritizing \"new quality productive forces,\" pushing AI into R&D, production, and operations, and backing zero-carbon industrial parks that fuse energy optimization, process re-engineering, and digital management. The hydrogen industry chain—green production, storage, fuel cells—is a named breakthrough area, with scaled demonstration and cost declines expected through the decade.\n\nThe global context sharpens the contrast. As some developed economies dial back green commitments under energy-security pressure, China's strategic patience and manufacturing base position it to absorb both domestic demand and export opportunity. For importers facing carbon-border mechanisms like the EU's CBAM, Chinese green hardware is increasingly the default, cost-effective option.\n\nThe honest limits remain: high-end autonomous-driving SoCs and certain industrial-control chips are still maturing, and over-capacity in some segments invites price wars Beijing is trying to curb. But the trajectory is unambiguous. China's advanced-manufacturing machine is not only scaling at home—it is shipping robots, batteries, and smart systems worldwide, and rewriting what \"Made in China\" means for a decarbonizing planet.",
+    "publishDate": "2026-08-06",
+    "contentType": "core",
+    "contentForm": "evergreen",
+    "tags": [],
+    "status": "published",
+    "scheduledDate": null,
+    "author": "SinoTechLens",
+    "sponsored": false,
+    "seo": {
+      "metaDescription": "",
+      "focusKeyword": "",
+      "ogImage": ""
+    }
+  },
+  {
     "id": "1786027683349",
     "slug": "deepseek-v4-and-the-open-source-bet-why-chinas-flagship-model-runs-on-both-nvidia-and-huawei-silicon",
     "title": "DeepSeek-V4 and the Open-Source Bet: Why China's Flagship Model Runs on Both Nvidia and Huawei Silicon",
