@@ -137,33 +137,6 @@
     "sponsored": true
   },
   {
-    "id": "7",
-    "slug": "spatial-computing-beyond-the-headset-draft",
-    "title": "Spatial Computing Beyond the Headset",
-    "track": "ai-digital-software",
-    "description": "Draft content pending editor review....",
-    "content": "<p>Draft content pending editor review.</p>",
-    "publishDate": "2026-08-10",
-    "contentType": "core",
-    "contentForm": "evergreen",
-    "tags": [
-      "spatial",
-      "ar"
-    ],
-    "status": "draft",
-    "author": "SinoTechLens",
-    "sponsored": false,
-    "scheduledDate": null,
-    "metaDescription": "",
-    "focusKeyword": "",
-    "ogImage": "",
-    "seo": {
-      "metaDescription": "",
-      "focusKeyword": "",
-      "ogImage": ""
-    }
-  },
-  {
     "id": "imp-1",
     "slug": "china-next-new-three-ai-robotics-biopharma",
     "title": "China's \"Next New Three\": How AI, Robotics, and Biopharma Are Redefining the Export Powerhouse",
