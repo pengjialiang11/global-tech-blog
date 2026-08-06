@@ -166,24 +166,6 @@
     "sponsored": false
   },
   {
-    "id": "5",
-    "slug": "quantum-computing-industrialization-outlook",
-    "title": "Quantum Computing Industrialization: A Measured Outlook",
-    "track": "general-china-tech",
-    "description": "A sober look at where quantum hardware is actually creating industrial value today.",
-    "content": "<p>Beyond the hype cycle, value is emerging in simulation and optimization pilots. We map the realistic near-term surface area.</p>",
-    "publishDate": "2026-07-20",
-    "contentType": "niche",
-    "contentForm": "evergreen",
-    "tags": [
-      "quantum",
-      "deep-tech"
-    ],
-    "status": "published",
-    "author": "SinoTechLens",
-    "sponsored": false
-  },
-  {
     "id": "6",
     "slug": "choosing-overseas-gpu-cloud-sponsored",
     "title": "Choosing Overseas GPU Cloud for AI Workloads (Sponsored)",
