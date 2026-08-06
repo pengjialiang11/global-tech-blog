@@ -1,5 +1,26 @@
 [
   {
+    "id": "1786010726554",
+    "slug": "beyond-moores-law-how-huaweis-tau-scaling-and-a-domestic-supply-chain-are-rewriting-chinas-chip-story",
+    "title": "Beyond Moore's Law: How Huawei's \"Tau Scaling\" and a Domestic Supply Chain Are Rewriting China's Chip Story",
+    "track": "semiconductor-hardware",
+    "description": "For sixty years the semiconductor industry ran on a single gospel: shrink the transistor, and everything gets faster. Mo...",
+    "content": "For sixty years the semiconductor industry ran on a single gospel: shrink the transistor, and everything gets faster. Moore's Law delivered every generation of computing we know. But it is running out of physical and economic road—and for Huawei, the most advanced manufacturing tools have been off-limits since 2022. So in May 2026, at the IEEE International Symposium on Circuits and Systems in Shanghai, Huawei's semiconductor chief He Tingbo proposed a different path: the \"Tau (τ) Scaling Law.\"\n\nWhere Moore's Law asks \"how small can a transistor be,\" Tau Law asks \"how fast can information move through a chip?\" The unit of progress shifts from geometry to time—signal propagation, memory access, interconnect, and synchronization latency. Huawei's practical implementation is \"LogicFolding,\" which stacks circuits vertically like adding floors to a building instead of spreading them flat. The company says this already yields 55% higher transistor density and 41% better power efficiency than conventional designs, and that it has mass-produced 381 such chips over six years. The first flagship Kirin chip to fully adopt LogicFolding is set to ship in fall 2026, with a target of reaching 1.4-nanometer-equivalent transistor density by 2031.\n\nHuawei is not alone in betting on architecture over lithography. At WAIC 2026, more than 100 computing-chip firms showed 200+ products, with 67 debuting for the first time. Huawei's Ascend 950 supernode connected 1,024 NPUs with 1 EFLOPS of FP8 compute and 3-microsecond cluster latency. Biren, MetaX, Enflame, and Moore Threads all pivoted toward supernode products, while Dongfang Suanxin's DF1000 uses mature 14nm process with 3D-stacked near-memory computing to claim \"14nm ≈ 4nm\" equivalent performance.\n\nMemory is closing a gap, too. ChangXin Memory Technologies (CXMT) is finishing validation of its first LPDDR6 chip—12.8 Gbps peak, 10.7 Gbps with a paired SoC—with small-batch introduction possible in late 2026 and volume production in the first half of 2027. And in July 2026, Chipone announced mass production of ICNA3611, China's first OLED display-touch integrated (TDDI) chip, in a mainstream consumer device—ending reliance on overseas suppliers for high-end display drivers.\n\nThe supply chain underneath all this is localizing fast. Domestic semiconductor equipment localization rose from 25% at the end of 2024 to 35% in 2025, and on new wafer-fab lines domestically made equipment hit 55% of procurement value by end-2025, ahead of the national 50% target. SMIC ran at 93.1% utilization in Q1 2026; Hua Hong hit 99.7%. In the first four months of 2026, China exported 117 billion integrated circuits worth $103.5 billion, up 83.7% in value year-on-year.\n\nChina also dominates the \"nerves\" of AI infrastructure. Chinese firms hold seven of the world's top-ten optical-module slots with over 60% combined market share; Zhongji InnoLight alone commands 40%+ of the 800G market and an estimated 50–70% of the 1.6T segment, supplying Nvidia, Google, and Amazon.\n\nThe honest caveat: without EUV lithography, China remains two to three generations behind on the finest nodes, and advanced-capacity constraints are real. But the strategic point stands. Export controls have not stopped Chinese AI—they have redirected it toward a home-grown stack built on architectural ingenuity, advanced packaging, and scale. For the rest of the world, that means a credible second source of AI compute is quietly taking shape.",
+    "publishDate": "2026-08-06",
+    "contentType": "core",
+    "contentForm": "evergreen",
+    "tags": [],
+    "status": "published",
+    "scheduledDate": null,
+    "author": "SinoTechLens",
+    "sponsored": false,
+    "seo": {
+      "metaDescription": "",
+      "focusKeyword": "",
+      "ogImage": ""
+    }
+  },
+  {
     "id": "1786010510637",
     "slug": "chinas-next-new-three-how-ai-robotics-and-biopharma-are-redefining-the-export-powerhouse",
     "title": "China's \"Next New Three\": How AI, Robotics, and Biopharma Are Redefining the Export Powerhouse",
