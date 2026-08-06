@@ -1,5 +1,26 @@
 [
   {
+    "id": "1786027683349",
+    "slug": "deepseek-v4-and-the-open-source-bet-why-chinas-flagship-model-runs-on-both-nvidia-and-huawei-silicon",
+    "title": "DeepSeek-V4 and the Open-Source Bet: Why China's Flagship Model Runs on Both Nvidia and Huawei Silicon",
+    "track": "ai-digital-software",
+    "description": "On April 24, 2026, DeepSeek released V4 and did something that reframed the open-source AI conversation: it shipped a 1-...",
+    "content": "On April 24, 2026, DeepSeek released V4 and did something that reframed the open-source AI conversation: it shipped a 1-million-token context window as a *default* feature, published the weights under the permissive MIT license, and—crucially—validated its inference path on both Nvidia GPUs and Huawei's Ascend NPUs. For a global developer audience, it was a clear signal that China's leading lab is building software explicitly designed to run on Chinese hardware.\n\nThe architecture is the headline. DeepSeek-V4 uses a mixture-of-experts design with two versions: a 1.6-trillion-parameter Pro model (49B active) and a 284-billion-parameter Flash model (13B active). The real innovation is in attention. A combined Compressed Sparse Attention (CSA) and Heavily Compressed Attention (HCA) scheme compresses the token dimension so aggressively that at 1M context, per-token inference FLOPs fall to 27% of the previous V3.2 generation and KV-cache memory to just 10%. In plain terms: million-token context stops being a luxury and becomes a baseline anyone can afford.\n\nBenchmarks put V4 at the front of the open-source pack. On SWE-bench Verified it scored 80.6%—tied with Gemini 3.1 Pro and the highest of any open model—and it posted 93.5 on LiveCodeBench, a Codeforces rating of 3206, 87.5% on MMLU-Pro, and 90.1% on GPQA Diamond. Pricing was cut by 75% at launch: V4-Pro at $0.435 in / $0.87 out per million tokens, and V4-Flash at $0.14 / $0.28—roughly 5 to 30 times cheaper than closed frontier models, with the code fully open.\n\nThe strategic twist is the hardware duality. DeepSeek explicitly verified its fine-grained expert-parallel (EP) scheme on both Nvidia and Huawei Ascend, and its technical report lists Ascend alongside Nvidia in the hardware-validation section. At least eight domestic chipmakers—Huawei Ascend, Cambricon, Hygon, Moore Threads, MetaX, Kunlunxin, T-Head, and Iluvatar—have announced V4 adaptation plans. In April, the China Academy of Information and Communications Technology even launched a national V4 localization-compatibility test, an unprecedented move for a model release.\n\nThis is the \"same-frequency iteration\" moment: Chinese models and Chinese chips are now evolving in lockstep. DeepSeek has also optimized V4 specifically for Huawei silicon ahead of the Ascend 950 supernode's volume rollout, which it expects will sharply lower Pro-tier serving costs in the second half of 2026.\n\nThe business scale matches the technical ambition. In June 2026, DeepSeek closed its first external funding round at over 50 billion yuan (about $7.4 billion)—the largest single round in Chinese AI history—at a valuation near 338 billion yuan (about $50 billion), with investors spanning its founder, Tencent, CATL, JD, NetEase, and the state AI fund.\n\nFor overseas developers, the practical meaning is simple: a top-tier, MIT-licensed model that you can self-host, fine-tune, and run on non-U.S. hardware is now a real option. Whether you deploy on Nvidia or Ascend, the weights are the same. That portability is exactly what a fragmented, sanctions-shaped world is starting to demand.",
+    "publishDate": "2026-08-06",
+    "contentType": "core",
+    "contentForm": "evergreen",
+    "tags": [],
+    "status": "published",
+    "scheduledDate": null,
+    "author": "SinoTechLens",
+    "sponsored": false,
+    "seo": {
+      "metaDescription": "",
+      "focusKeyword": "",
+      "ogImage": ""
+    }
+  },
+  {
     "id": "1786010726554",
     "slug": "beyond-moores-law-how-huaweis-tau-scaling-and-a-domestic-supply-chain-are-rewriting-chinas-chip-story",
     "title": "Beyond Moore's Law: How Huawei's \"Tau Scaling\" and a Domestic Supply Chain Are Rewriting China's Chip Story",
