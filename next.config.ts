@@ -1,17 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // www → non-www 规范跳转（避免重复内容，统一权威域名）
-  async redirects() {
-    return [
-      {
-        source: "/:path*",
-        has: [{ type: "host", value: "www.sinotechlens.com" }],
-        destination: "https://sinotechlens.com/:path*",
-        permanent: true,
-      },
-    ];
-  },
+  // www → non-www 规范跳转请在 Vercel Domain Settings 或 Cloudflare 层配置（单方向），
+  // 不要在应用层重复做 redirect，否则会与基础设施的 redirect 形成无限循环 308。
   // 关闭Turbopack静态资源缓存bug
   turbopack: {
     resolveAlias: {},
