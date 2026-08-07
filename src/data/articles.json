@@ -1,5 +1,26 @@
 [
   {
+    "id": "1786110033152",
+    "slug": "deepseek-v45-just-dropped-and-its-still-the-cheapest-frontier-model-around",
+    "title": "DeepSeek V4.5 Just Dropped — and It's Still the Cheapest Frontier Model Around",
+    "track": "ai-digital-software",
+    "description": "If you follow AI at all, you've probably noticed a pattern: the best models are locked behind big monthly bills, and the...",
+    "content": "If you follow AI at all, you've probably noticed a pattern: the best models are locked behind big monthly bills, and the \"free\" open ones usually trail a step behind. DeepSeek has been chipping at that wall for a while, and on July 5, 2026 it took another swing with V4.5 — an open-weight model that lands in the same performance band as the proprietary frontier while charging roughly a fifteenth of the price.\n\nLet's talk numbers first, because they're the whole story. V4.5 is released under the MIT license, which means you can download the weights, run them yourself, fine-tune them, and ship them inside a product without a lawyer breathing down your neck. Hosted API pricing is $0.50 per million input tokens and $1.10 per million output tokens. For comparison, Claude Opus 4.8 sits at $15 in / $75 out, and GPT-5.6 at $5 / $30. Same ballpark on quality, wildly different on price.\n\nAnd the quality is real. On GPQA Diamond, a tough science-reasoning benchmark, V4.5 scores 91.8% — right alongside or above the proprietary leaders. Its math score is 93.1%, MMLU-Pro 89.4%. The one place it's merely \"strong, not leading\" is coding: on SWE-bench Pro it reaches 62.1%, respectable and well ahead of most open models, but a clear step behind the top closed systems. So the honest framing is: frontier-band on reasoning and math, good-but-not-best on coding, and unbeatable on price.\n\nContext window is 256,000 tokens with up to 33,000 tokens of output — plenty for long documents and agentic workflows. V4.5 is essentially a mid-cycle refresh of the V4 family (the original V4, released in April, shipped a 1-million-token context); this version doubled the window, improved tool-calling, and notably lifted multilingual output quality.\n\nThe part that matters most for builders is the license plus self-hosting. Because the weights are open, your marginal cost per token, once you're running it yourself, is just infrastructure — your own GPUs and electricity. At high volume, a workload that costs five figures a month on a proprietary API can run on your own hardware for the price of the boxes and the power. For regulated industries or anyone shipping a product on top of a model, MIT licensing is often the deciding factor, not the benchmark.\n\nDeepSeek has also been quietly strengthening its agent story. The lighter V4-Flash model got a big agentic bump and now natively supports OpenAI's newer \"Responses API\" format, which makes it easy to port agent apps built for the OpenAI ecosystem over to DeepSeek. It also tuned for Codex-style coding workflows. In plain English: if you're building an AI agent that calls tools and loops through tasks, the cheap model is now \"good enough\" for a lot of it, which is exactly where cost matters most.\n\nTwo caveats worth saying out loud. First, the launch-day benchmarks are vendor-reported; early third-party runs have tracked close, but treat any lab's day-one numbers with a little discount until the community reproduces them. Second, \"the weights are free\" and \"running them well is easy\" are different things — a frontier-scale model needs serious GPU capacity and an inference stack like vLLM or TGI, plus someone who understands batching and quantization.\n\nSo why does this matter if you're not in China? Because the gap between \"cheap open model\" and \"frontier proprietary model\" has narrowed to the point where, for a growing set of reasoning-heavy workloads, the open model is simply the correct choice. DeepSeek isn't just cheap anymore — it's the canary in the coal mine for a world where the best AI is open, downloadable, and runs on your own machines.",
+    "publishDate": "2026-08-07",
+    "contentType": "core",
+    "contentForm": "evergreen",
+    "tags": [],
+    "status": "published",
+    "scheduledDate": null,
+    "author": "SinoTechLens",
+    "sponsored": false,
+    "seo": {
+      "metaDescription": "",
+      "focusKeyword": "",
+      "ogImage": ""
+    }
+  },
+  {
     "id": "1786109613028",
     "slug": "chinese-evs-are-cracking-japans-tough-car-market-and-byd-is-leading-the-charge",
     "title": "Chinese EVs Are Cracking Japan's Tough Car Market — and BYD Is Leading the Charge",
