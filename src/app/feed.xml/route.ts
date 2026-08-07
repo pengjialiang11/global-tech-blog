@@ -26,7 +26,7 @@ export async function GET() {
   <channel>
     <title>SinoTechLens</title>
     <link>${SITE_URL}</link>
-    <description>China frontier tech & cross-border technology trends</description>
+    <description>${escapeXml("China frontier tech & cross-border technology trends")}</description>
     <language>en</language>
 ${items}
   </channel>

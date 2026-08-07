@@ -21,6 +21,7 @@ export default function HeaderNav() {
             ))}
             <Link href="/articles" className="text-gray-700 hover:text-black transition-colors">All Articles</Link>
             <Link href="/about" className="text-gray-700 hover:text-black transition-colors">About</Link>
+            <Link href="/contact" className="text-gray-700 hover:text-black transition-colors">Contact</Link>
             <Link href="/admin-login" className="text-gray-500 hover:text-black transition-colors">Admin Login</Link>
           </nav>
 
@@ -49,6 +50,7 @@ function MobileNav() {
           ))}
           <Link href="/articles" className="block py-2 text-gray-700 hover:text-black">All Articles</Link>
           <Link href="/about" className="block py-2 text-gray-700 hover:text-black">About</Link>
+          <Link href="/contact" className="block py-2 text-gray-700 hover:text-black">Contact</Link>
           <Link href="/admin-login" className="block py-2 text-gray-500 hover:text-black">Admin Login</Link>
         </div>
       </details>

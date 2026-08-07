@@ -14,6 +14,7 @@ export default function Footer() {
           <div className="flex flex-wrap gap-6 text-sm text-gray-600">
             <Link href="/about" className="hover:text-black">About</Link>
             <Link href="/articles" className="hover:text-black">Articles</Link>
+            <Link href="/contact" className="hover:text-black">Contact</Link>
             <Link href="/privacy-policy" className="hover:text-black">Privacy Policy</Link>
             <Link href="/disclaimer" className="hover:text-black">Disclaimer</Link>
             <Link href="/admin-login" className="hover:text-black">Admin</Link>

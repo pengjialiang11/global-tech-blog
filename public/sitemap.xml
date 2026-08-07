@@ -51,52 +51,22 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://sinotechlens.com/articles/china-open-source-llms-reshaping-global-tooling</loc>
+    <loc>https://sinotechlens.com/articles/from-lithium-to-robots-inside-chinas-advanced-manufacturing-machine-thats-going-global</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sinotechlens.com/articles/weekly-ai-agent-roundup-autonomous-coding</loc>
+    <loc>https://sinotechlens.com/articles/deepseek-v4-and-the-open-source-bet-why-chinas-flagship-model-runs-on-both-nvidia-and-huawei-silicon</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sinotechlens.com/articles/inside-chinas-mature-node-semiconductor-surge</loc>
+    <loc>https://sinotechlens.com/articles/beyond-moores-law-how-huaweis-tau-scaling-and-a-domestic-supply-chain-are-rewriting-chinas-chip-story</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sinotechlens.com/articles/unitree-humanoid-demo-explained</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sinotechlens.com/articles/quantum-computing-industrialization-outlook</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sinotechlens.com/articles/choosing-overseas-gpu-cloud-sponsored</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sinotechlens.com/articles/china-next-new-three-ai-robotics-biopharma</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sinotechlens.com/articles/beyond-moores-law-huawei-tau-scaling-china-chip-story</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sinotechlens.com/articles/deepseek-v4-open-source-bet-nvidia-huawei-silicon</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sinotechlens.com/articles/china-advanced-manufacturing-machine-going-global</loc>
+    <loc>https://sinotechlens.com/articles/chinas-next-new-three-how-ai-robotics-and-biopharma-are-redefining-the-export-powerhouse</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

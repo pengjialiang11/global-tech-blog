@@ -19,6 +19,21 @@ export default function About() {
           We aim to provide transparent, factual insights into China’s industrial tech advancement. All content focuses on industrial application, policy trends, product iteration and cross-border cooperation. We explicitly exclude financial investment advice, cryptocurrency and speculative asset commentary to meet global advertising and regulatory compliance standards.
         </p>
       </section>
+
+      <section className="mt-8">
+        <h2 className="text-2xl font-semibold mb-4">Contact</h2>
+        <p className="leading-relaxed">
+          Questions, corrections, or partnership inquiries are welcome. Reach the editorial team at{" "}
+          <a href="mailto:hello@sinotechlens.com" className="text-blue-700 hover:underline">
+            hello@sinotechlens.com
+          </a>
+          , or visit our{" "}
+          <a href="/contact" className="text-blue-700 hover:underline">
+            Contact page
+          </a>
+          .
+        </p>
+      </section>
     </div>
   );
 }

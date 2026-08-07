@@ -1,18 +1,8 @@
-"use client";
-
-import { useState, useEffect } from "react";
 import Link from "next/link";
 import AdSense from "@/components/AdSense";
 import { TRACKS } from "@/lib/tracks";
-
-interface Article {
-  id: string;
-  slug: string;
-  title: string;
-  track: string;
-  description: string;
-  publishDate: string;
-}
+import { getAllArticles } from "@/lib/articleData";
+import TrackFilter from "@/components/TrackFilter";
 
 const trackStyles: Record<string, string> = {
   "general-china-tech": "bg-amber-100 text-amber-700",
@@ -21,25 +11,9 @@ const trackStyles: Record<string, string> = {
   "green-tech-manufacturing": "bg-emerald-100 text-emerald-700",
 };
 
+// 服务端渲染：完整文章列表直接进 HTML，保证爬虫能抓到所有链接
 export default function AllArticlesPage() {
-  const [activeTrack, setActiveTrack] = useState<string>("All");
-  const [articles, setArticles] = useState<Article[]>([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    fetch("/api/articles")
-      .then((r) => r.json())
-      .then((data) => {
-        if (data.success) setArticles(data.articles);
-        setLoading(false);
-      });
-  }, []);
-
-  const filtered = activeTrack === "All" ? articles : articles.filter((item) => item.track === activeTrack);
-
-  if (loading) {
-    return <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16 text-center">Loading articles…</div>;
-  }
+  const articles = getAllArticles();
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10">
@@ -50,22 +24,13 @@ export default function AllArticlesPage() {
 
       <AdSense slot="0987654321" />
 
-      {/* Filter pills */}
-      <div className="flex flex-wrap gap-2 mb-10">
-        <FilterButton active={activeTrack === "All"} onClick={() => setActiveTrack("All")}>
-          All Tracks
-        </FilterButton>
-        {TRACKS.map((t) => (
-          <FilterButton key={t.slug} active={activeTrack === t.slug} onClick={() => setActiveTrack(t.slug)}>
-            {t.name}
-          </FilterButton>
-        ))}
-      </div>
+      <TrackFilter tracks={TRACKS} />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {filtered.map((article) => (
+      <div id="article-grid" className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+        {articles.map((article) => (
           <article
             key={article.id}
+            data-track={article.track}
             className="border rounded-xl p-6 bg-white hover:shadow-md transition-shadow"
           >
             <span className={`inline-block text-xs font-semibold uppercase tracking-wide px-2 py-1 rounded ${trackStyles[article.track] || "bg-gray-100 text-gray-700"}`}>
@@ -82,24 +47,11 @@ export default function AllArticlesPage() {
         ))}
       </div>
 
-      {filtered.length === 0 && (
+      {articles.length === 0 && (
         <div className="text-center py-20 text-gray-500">
-          No articles found in this track.
+          No articles found.
         </div>
       )}
     </div>
-  );
-}
-
-function FilterButton({ active, onClick, children }: { active: boolean; onClick: () => void; children: React.ReactNode }) {
-  return (
-    <button
-      onClick={onClick}
-      className={`px-4 py-2 rounded-full border text-sm font-medium transition-colors ${
-        active ? "bg-black text-white border-black" : "bg-white text-gray-700 border-gray-300 hover:bg-gray-50"
-      }`}
-    >
-      {children}
-    </button>
   );
 }
