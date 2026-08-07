@@ -1,5 +1,26 @@
 [
   {
+    "id": "1786107336730",
+    "slug": "how-china-is-rewiring-its-power-grid-for-a-renewable-future",
+    "title": "How China Is Rewiring Its Power Grid for a Renewable Future",
+    "track": "green-tech-manufacturing",
+    "description": "When people talk about China and clean energy, they usually mention solar panels and wind turbines. But the harder, less...",
+    "content": "When people talk about China and clean energy, they usually mention solar panels and wind turbines. But the harder, less glamorous story is the grid — the giant web of wires, substations and software that has to actually move all that green power from where it's made to where it's needed. In 2026, China is rebuilding that grid on a scale and speed almost no other country can match, and it's worth understanding if you care about where the global energy transition is heading.\n\nHere's the starting point. By the end of February 2026, China's combined wind and solar installed capacity hit 1.88 billion kilowatts — up 28.8% year-on-year. Renewable generation passed 4 trillion kilowatt-hours, roughly 40% of the country's total electricity. That's already a lot of clean power flowing through the system every day.\n\nThe official plan, the \"15th Five-Year Plan\" running 2026–2030, is ambitious. Targets include adding about 200 million kilowatts of new wind and solar *every year*, getting new-energy generation capacity above 50% of the total by 2030, and pushing non-fossil energy to 25% of all consumption. To move that much power, the grid itself has to be rebuilt.\n\nThe centerpiece is ultra-high-voltage (UHV) transmission. Think of it as super-highways for electricity. During the plan period, China aims to complete 15 new UHV direct-current lines, with total grid investment expected to top 5 trillion yuan (about $700 billion). The goal is \"west-to-east\" capacity above 420 million kW — shipping sunshine from the deserts of the northwest and wind from the plains to the energy-hungry cities on the coast. The first such DC project of the plan, the Anhui–Hubei interconnection, broke ground in 2026.\n\nIn February 2026, the State Grid rolled out ten concrete measures to support renewables. The headline promises: connect at least 200 million kW of new wind/solar per year, lift cross-provincial transmission capacity by 35%, and help build the country's first 40 \"zero-carbon industrial parks.\" They're also throwing money at storage and flexibility — new pumped-hydro projects, battery storage, and \"virtual power plants\" that pool rooftop solar, EV chargers and factory load into one controllable block.\n\nVirtual power plants are a quietly cool part of this. By the end of 2025, China had about 470 of them, with a tested peak adjustment capacity of 16.85 million kW — up about 70% in a year. Instead of building more power plants, the grid is learning to switch demand on and off like a dial.\n\nThere's also a real shift toward \"new-type grids\" that mix big transmission lines with smarter local distribution and microgrids. The idea is for neighborhoods and factories to balance their own power locally — solar on the roof, battery in the basement, little dependence on the distant grid. And at the July 2026 ACDC conference in Beijing, researchers pushed the frontier further: how to run a grid that's 100% renewable, using AC/DC fusion and power-electronics so the system stays stable even when the sun isn't shining.\n\nYou can see the demand side heating up, too. Over this year's Qingming holiday, EV charging within the State Grid and Southern Grid regions rose about 30% year-on-year as families hit the road in electric cars.\n\nFor readers outside China, the takeaway is simple but important: the green transition isn't just about generating clean power, it's about moving and managing it. China is building that backbone at a pace that makes it both a model to learn from and a competitor to reckon with. The next decade of energy will be won or lost in the grid — and right now, China is laying a lot of cable.",
+    "publishDate": "2026-08-07",
+    "contentType": "core",
+    "contentForm": "evergreen",
+    "tags": [],
+    "status": "published",
+    "scheduledDate": null,
+    "author": "SinoTechLens",
+    "sponsored": false,
+    "seo": {
+      "metaDescription": "",
+      "focusKeyword": "",
+      "ogImage": ""
+    }
+  },
+  {
     "id": "1786096965624",
     "slug": "chinas-exoskeleton-boom-robotic-legs-that-help-grandma-climb-the-stairs",
     "title": "China's Exoskeleton Boom: Robotic Legs That Help Grandma Climb the Stairs",
