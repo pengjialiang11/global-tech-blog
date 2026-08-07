@@ -1,5 +1,26 @@
 [
   {
+    "id": "1786110148871",
+    "slug": "ai-is-flooding-chinas-short-drama-scene-and-reshaping-how-stories-get-made",
+    "title": "AI Is Flooding China's Short-Drama Scene — and Reshaping How Stories Get Made",
+    "track": "ai-digital-software",
+    "description": "Scroll through any Chinese social app and you'll hit them fast: micro-dramas (微短剧), those vertical-screen, punchy, binge...",
+    "content": "Scroll through any Chinese social app and you'll hit them fast: micro-dramas (微短剧), those vertical-screen, punchy, binge-in-a-sitting shows with a twist every few seconds. They've been a domestic obsession for a couple of years. In 2026, something new is happening — AI is taking over the production side so completely that it's reshaping who gets to make a \"TV show\" at all.\n\nThe scale is the headline. In the first quarter of 2026, China's industry released about 128,000 micro-dramas. Of those, roughly 122,000 — over 95% — were AI-generated. On Douyin alone, about 50,000 new AI-native titles went up in March. That's not a trend; that's a flood.\n\nWhy the sudden flip? Money and time. A traditional 60-episode mid-tier drama used to cost 500,000–600,000 yuan and take a crew of dozens a month. An AI version now runs under 200,000 yuan — some studios say the per-episode cost dropped from around 30,000 yuan to 5,000 after tools like Seedance 2.0 made generated video actually fluent. Production time shrank from months to 20–30 days, and the team from dozens of people to a handful — sometimes just one. One studio head put it bluntly: \"If last year AI was a wave on the horizon, now it's sweeping through every corner of film and TV.\"\n\nThe workflow changed, too. Instead of hauling lights and actors around, a creator writes a script, designs the characters and scenes as images, then \"draws cards\" (抽卡) — generating video clips from those assets with AI — and edits. The human role shifts from coordinating crews to curating taste: picking the right story, judging quality, refining the result. A company called Qixiang Culture went from 10,000 minutes of AI anime in 2025 to a target of 100,000 minutes in 2026.\n\nAnd this isn't staying domestic. AI micro-dramas are going global fast. One Guangzhou studio that targets the US market (over 80% of its revenue) says overseas AI-drama orders are up about 5x this year and predicts roughly 50x full-year growth versus 2025. The appeal is obvious: no need to fly to another country to hire local actors and shoot local stories. AI drops both the production cost and the localization barrier at once.\n\nThere's a cultural upside, too. AI makes it cheap to bring China's deep well of myths, classics and folklore to screen — things that were \"too small for a movie, too niche for a series\" now get their own little episodes. Titles like *China Mythology* and archaeology-meets-AI shorts are introducing young viewers to stories that used to sit dusty in books.\n\nBut it's not all rosy, and the industry knows it. Human actors — especially mid-tier ones at studio hubs like Hengdian and Zhengzhou — watched crews vanish almost overnight as productions pivoted to AI. There's real anxiety about jobs. The consensus among directors, though, is that AI can't yet fake genuine human emotion or subtle performance; it's a brush, not the painter. Notably, the major platforms are doubling down on human-made drama anyway: six of them (Hongguo, Tencent, Mango, Migu, Kuaishou, Dianzhong) pledged at least 6 billion yuan to support live-action short dramas, and Hongguo alone set aside 5 billion. Regulators are catching up too — AI dramas must now go through the same review as human ones, and platforms have already purged tens of thousands of low-quality AI titles.\n\nFor creators outside China, this is a live preview of what AI video looks like at scale: the thrilling part (almost anyone can make a show) and the messy part (a tsunami of sameness where taste and storytelling are the only things that separate signal from noise). China's micro-drama boom is basically a giant, fast-forwarding experiment in what happens when making video gets cheap. The rest of the world should be watching — and taking notes.",
+    "publishDate": "2026-08-07",
+    "contentType": "core",
+    "contentForm": "evergreen",
+    "tags": [],
+    "status": "published",
+    "scheduledDate": null,
+    "author": "SinoTechLens",
+    "sponsored": false,
+    "seo": {
+      "metaDescription": "",
+      "focusKeyword": "",
+      "ogImage": ""
+    }
+  },
+  {
     "id": "1786110033152",
     "slug": "deepseek-v45-just-dropped-and-its-still-the-cheapest-frontier-model-around",
     "title": "DeepSeek V4.5 Just Dropped — and It's Still the Cheapest Frontier Model Around",
