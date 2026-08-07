@@ -12,6 +12,11 @@ const trackStyles: Record<string, string> = {
 };
 
 // 服务端渲染：完整文章列表直接进 HTML，保证爬虫能抓到所有链接
+export const metadata = {
+  title: "All Articles | SinoTechLens",
+  description: "Browse all articles covering China's frontier technology across semiconductors, AI, green energy, and advanced manufacturing.",
+};
+
 export default function AllArticlesPage() {
   const articles = getAllArticles();
 
