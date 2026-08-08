@@ -14,11 +14,51 @@ export const metadata = {
   },
   description:
     "Independent English blog focused on China's cutting-edge tech industrial landing & cross-border global technology trends.",
+  keywords: [
+    "China tech",
+    "semiconductor",
+    "AI",
+    "green energy",
+    "advanced manufacturing",
+    "DeepSeek",
+    "Huawei",
+    "BYD",
+    "industrial policy",
+  ],
+  authors: [{ name: "SinoTechLens Editorial" }],
+  creator: "SinoTechLens",
+  publisher: "SinoTechLens",
   alternates: { canonical: SITE_URL },
   openGraph: {
     type: "website",
     siteName: "SinoTechLens",
     url: SITE_URL,
+    title: "SinoTechLens — China Frontier Tech & Cross-border Trends",
+    description:
+      "Independent English blog focused on China's cutting-edge tech industrial landing & cross-border global technology trends.",
+    locale: "en_US",
+    images: [
+      {
+        url: "/og-default.svg",
+        width: 1200,
+        height: 630,
+        alt: "SinoTechLens — Independent English coverage of China's frontier tech and industrial trends",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@sinotechlens",
+    creator: "@sinotechlens",
+    title: "SinoTechLens — China Frontier Tech & Cross-border Trends",
+    description:
+      "Independent English blog focused on China's cutting-edge tech industrial landing & cross-border global technology trends.",
+    images: ["/og-default.svg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-image-preview": "large" },
   },
 };
 

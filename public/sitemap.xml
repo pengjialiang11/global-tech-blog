@@ -51,6 +51,36 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://www.sinotechlens.com/articles/ai-is-flooding-chinas-short-drama-scene-and-reshaping-how-stories-get-made</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.sinotechlens.com/articles/deepseek-v45-just-dropped-and-its-still-the-cheapest-frontier-model-around</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.sinotechlens.com/articles/chinese-evs-are-cracking-japans-tough-car-market-and-byd-is-leading-the-charge</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.sinotechlens.com/articles/chinas-ev-exports-hit-another-gear-in-2026</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.sinotechlens.com/articles/how-china-is-rewiring-its-power-grid-for-a-renewable-future</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.sinotechlens.com/articles/chinas-exoskeleton-boom-robotic-legs-that-help-grandma-climb-the-stairs</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.sinotechlens.com/articles/from-lithium-to-robots-inside-chinas-advanced-manufacturing-machine-thats-going-global</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

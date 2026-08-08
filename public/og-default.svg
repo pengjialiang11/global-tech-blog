@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <text x="80" y="280" font-size="76" font-weight="800" letter-spacing="-2">SinoTechLens</text>
+    <text x="80" y="350" font-size="32" font-weight="500" fill="#94a3b8">China Tech, in English</text>
+    <line x1="80" y1="395" x2="1120" y2="395" stroke="#334155" stroke-width="2"/>
+    <text x="80" y="465" font-size="28" font-weight="400" fill="#cbd5e1">Independent English coverage of</text>
+    <text x="80" y="505" font-size="28" font-weight="400" fill="#cbd5e1">China&apos;s frontier technology &amp; industrial trends.</text>
+    <text x="80" y="570" font-size="22" font-weight="500" fill="#64748b">sinotechlens.com</text>
+  </g>
+</svg>
