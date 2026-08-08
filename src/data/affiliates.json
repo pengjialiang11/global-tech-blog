@@ -1,15 +1,5 @@
 [
   {
-    "id": "aff-1",
-    "name": "Nebula GPU Cloud",
-    "track": "ai-digital-software",
-    "note": "Overseas GPU cloud, hourly billing",
-    "targetUrl": "https://example.com/affiliate/nebula-gpu",
-    "status": "Active",
-    "commission": "up to 20%",
-    "featured": true
-  },
-  {
     "id": "aff-2",
     "name": "CodeForge AI IDE",
     "track": "ai-digital-software",
