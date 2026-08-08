@@ -6,7 +6,7 @@
 import fs from "fs";
 import path from "path";
 
-const SITE = process.env.NEXT_PUBLIC_SITE_URL || "https://sinotechlens.com";
+const SITE = process.env.NEXT_PUBLIC_SITE_URL || "https://www.sinotechlens.com";
 const appDir = path.join(process.cwd(), ".next", "server", "app");
 const publicDir = path.join(process.cwd(), "public");
 

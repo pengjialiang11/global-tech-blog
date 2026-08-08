@@ -23,9 +23,9 @@ export default function About() {
       <section className="mt-8">
         <h2 className="text-2xl font-semibold mb-4">Contact</h2>
         <p className="leading-relaxed">
-          Questions, corrections, or partnership inquiries are welcome. Reach the editorial team at{" "}
-          <a href="mailto:hello@sinotechlens.com" className="text-blue-700 hover:underline">
-            hello@sinotechlens.com
+          Questions, corrections, or partnership inquiries are welcome. Reach the editor at{" "}
+          <a href="mailto:1743153696@qq.com" className="text-blue-700 hover:underline">
+            1743153696@qq.com
           </a>
           , or visit our{" "}
           <a href="/contact" className="text-blue-700 hover:underline">

@@ -4,7 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 const ROOT = process.cwd();
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://sinotechlens.com";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.sinotechlens.com";
 const outDir = path.join(ROOT, "public");
 fs.mkdirSync(outDir, { recursive: true });
 

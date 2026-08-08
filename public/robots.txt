@@ -5,4 +5,4 @@ Disallow: /admin-login
 Disallow: /cms
 Disallow: /api
 
-Sitemap: https://sinotechlens.com/sitemap.xml
+Sitemap: https://www.sinotechlens.com/sitemap.xml

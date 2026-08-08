@@ -45,8 +45,8 @@ export default function Disclaimer() {
       <p className="mb-4">
         Our editorial and commercial functions are kept separate. If you have any questions about a specific piece of
         sponsored or affiliate content, please contact{" "}
-        <a href="mailto:partners@sinotechlens.com" className="text-blue-700 hover:underline">
-          partners@sinotechlens.com
+        <a href="mailto:1743153696@qq.com" className="text-blue-700 hover:underline">
+          1743153696@qq.com
         </a>
         .
       </p>

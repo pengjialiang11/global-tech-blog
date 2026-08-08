@@ -12,7 +12,7 @@ interface ArticlePageProps {
   params: Promise<{ slug: string }>;
 }
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://sinotechlens.com";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.sinotechlens.com";
 
 const trackStyles: Record<string, string> = {
   "general-china-tech": "bg-amber-100 text-amber-700",

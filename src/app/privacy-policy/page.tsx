@@ -30,8 +30,8 @@ export default function PrivacyPolicy() {
       <h2 className="text-xl font-semibold mt-8 mb-3">5. Contact</h2>
       <p className="mb-4">
         For any privacy-related request, please contact us at{" "}
-        <a href="mailto:privacy@sinotechlens.com" className="text-blue-700 hover:underline">
-          privacy@sinotechlens.com
+        <a href="mailto:1743153696@qq.com" className="text-blue-700 hover:underline">
+          1743153696@qq.com
         </a>
         .
       </p>

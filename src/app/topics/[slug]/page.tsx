@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: TopicPageProps): Promise<Meta
   return {
     title: `${track.name} — SinoTechLens`,
     description: track.description,
-    alternates: { canonical: `${process.env.NEXT_PUBLIC_SITE_URL || "https://sinotechlens.com"}/topics/${slug}` },
+    alternates: { canonical: `${process.env.NEXT_PUBLIC_SITE_URL || "https://www.sinotechlens.com"}/topics/${slug}` },
   };
 }
 

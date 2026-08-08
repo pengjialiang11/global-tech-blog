@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { getAllArticles } from "@/lib/articleData";
 import { getTrack } from "@/lib/tracks";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://sinotechlens.com";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.sinotechlens.com";
 
 export async function GET() {
   const articles = getAllArticles().slice(0, 50);

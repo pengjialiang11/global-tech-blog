@@ -1,72 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://sinotechlens.com</loc>
+    <loc>https://www.sinotechlens.com</loc>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>https://sinotechlens.com/articles</loc>
+    <loc>https://www.sinotechlens.com/articles</loc>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://sinotechlens.com/about</loc>
+    <loc>https://www.sinotechlens.com/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://sinotechlens.com/privacy-policy</loc>
+    <loc>https://www.sinotechlens.com/privacy-policy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://sinotechlens.com/disclaimer</loc>
+    <loc>https://www.sinotechlens.com/disclaimer</loc>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://sinotechlens.com/feed.xml</loc>
+    <loc>https://www.sinotechlens.com/feed.xml</loc>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://sinotechlens.com/topics/general-china-tech</loc>
+    <loc>https://www.sinotechlens.com/topics/general-china-tech</loc>
     <changefreq>daily</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://sinotechlens.com/topics/semiconductor-hardware</loc>
+    <loc>https://www.sinotechlens.com/topics/semiconductor-hardware</loc>
     <changefreq>daily</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://sinotechlens.com/topics/ai-digital-software</loc>
+    <loc>https://www.sinotechlens.com/topics/ai-digital-software</loc>
     <changefreq>daily</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://sinotechlens.com/topics/green-tech-manufacturing</loc>
+    <loc>https://www.sinotechlens.com/topics/green-tech-manufacturing</loc>
     <changefreq>daily</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://sinotechlens.com/articles/from-lithium-to-robots-inside-chinas-advanced-manufacturing-machine-thats-going-global</loc>
+    <loc>https://www.sinotechlens.com/articles/from-lithium-to-robots-inside-chinas-advanced-manufacturing-machine-thats-going-global</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sinotechlens.com/articles/deepseek-v4-and-the-open-source-bet-why-chinas-flagship-model-runs-on-both-nvidia-and-huawei-silicon</loc>
+    <loc>https://www.sinotechlens.com/articles/deepseek-v4-and-the-open-source-bet-why-chinas-flagship-model-runs-on-both-nvidia-and-huawei-silicon</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sinotechlens.com/articles/beyond-moores-law-how-huaweis-tau-scaling-and-a-domestic-supply-chain-are-rewriting-chinas-chip-story</loc>
+    <loc>https://www.sinotechlens.com/articles/beyond-moores-law-how-huaweis-tau-scaling-and-a-domestic-supply-chain-are-rewriting-chinas-chip-story</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sinotechlens.com/articles/chinas-next-new-three-how-ai-robotics-and-biopharma-are-redefining-the-export-powerhouse</loc>
+    <loc>https://www.sinotechlens.com/articles/chinas-next-new-three-how-ai-robotics-and-biopharma-are-redefining-the-export-powerhouse</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
