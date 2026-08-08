@@ -1,15 +1,5 @@
 [
   {
-    "id": "aff-2",
-    "name": "CodeForge AI IDE",
-    "track": "ai-digital-software",
-    "note": "AI-native IDE with agent mode",
-    "targetUrl": "https://example.com/affiliate/codeforge",
-    "status": "Active",
-    "commission": "30-day cookie",
-    "featured": true
-  },
-  {
     "id": "aff-3",
     "name": "SiliconParts Direct",
     "track": "semiconductor-hardware",
