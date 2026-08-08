@@ -1,12 +1,1 @@
-[
-  {
-    "id": "aff-3",
-    "name": "SiliconParts Direct",
-    "track": "semiconductor-hardware",
-    "note": "Component sourcing for prototyping",
-    "targetUrl": "https://example.com/affiliate/siliconparts",
-    "status": "Paused",
-    "commission": "5%",
-    "featured": false
-  }
-]
+[]
