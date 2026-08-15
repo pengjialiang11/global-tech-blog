@@ -44,12 +44,17 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
       url,
       type: "article",
       publishedTime: article.publishDate,
-      images: article.seo?.ogImage ? [article.seo.ogImage] : [],
+      images: article.seo?.ogImage
+        ? [{ url: article.seo.ogImage, width: 1200, height: 630, alt: article.title }]
+        : [{ url: "/og-default.svg", width: 1200, height: 630, alt: article.title }],
     },
     twitter: {
       card: "summary_large_image",
       title: article.title,
       description,
+      images: article.seo?.ogImage
+        ? [article.seo.ogImage]
+        : ["/og-default.svg"],
     },
   };
 }
