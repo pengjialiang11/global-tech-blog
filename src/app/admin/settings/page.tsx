@@ -1,3 +1,5 @@
+import { SITE_URL } from "@/lib/site";
+
 export default function AdminSettingsPage() {
   return (
     <div>
@@ -5,7 +7,7 @@ export default function AdminSettingsPage() {
       <div className="border rounded-lg p-6 bg-white shadow-sm space-y-4 text-gray-700">
         <p>Current environment variables (read-only preview):</p>
         <ul className="space-y-2 text-sm">
-          <li><strong>Site URL:</strong> {process.env.NEXT_PUBLIC_SITE_URL || "https://www.sinotechlens.com"}</li>
+          <li><strong>Site URL:</strong> {SITE_URL}</li>
           <li><strong>Admin User:</strong> {process.env.ADMIN_USER || "admin"}</li>
           <li><strong>Analytics Provider:</strong> {process.env.NEXT_PUBLIC_ANALYTICS_PROVIDER || "not set"}</li>
           <li><strong>AdSense:</strong> {process.env.NEXT_PUBLIC_ADSENSE_PUB ? "configured" : "not set"}</li>

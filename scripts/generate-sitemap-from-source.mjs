@@ -4,7 +4,9 @@ import fs from "node:fs";
 import path from "node:path";
 
 const ROOT = process.cwd();
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.sinotechlens.com";
+// 强制规范化 www（与 src/lib/site.ts 保持一致），避免 canonical/sitemap 出现裸域
+const _raw = process.env.NEXT_PUBLIC_SITE_URL || "https://www.sinotechlens.com";
+const SITE_URL = _raw.replace(/^https?:\/\/(?!www\.)/i, (m) => `${m}www.`);
 const outDir = path.join(ROOT, "public");
 fs.mkdirSync(outDir, { recursive: true });
 

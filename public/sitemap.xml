@@ -51,6 +51,11 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://www.sinotechlens.com/articles/chinas-electronic-skin-lets-robots-feel-heat-pressure-and-when-somethings-about-to-slip</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.sinotechlens.com/articles/ai-is-flooding-chinas-short-drama-scene-and-reshaping-how-stories-get-made</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

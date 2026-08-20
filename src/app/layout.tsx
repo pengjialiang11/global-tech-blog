@@ -3,8 +3,7 @@ import HeaderNav from "@/components/HeaderNav";
 import Footer from "@/components/Footer";
 import CookieBanner from "@/components/CookieBanner";
 import Analytics from "@/components/Analytics";
-
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.sinotechlens.com";
+import { SITE_URL } from "@/lib/site";
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),

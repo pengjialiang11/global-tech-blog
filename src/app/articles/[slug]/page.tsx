@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { getArticleBySlug, getAllArticles, getArticlesByTrack } from "@/lib/articleData";
 import { getTrack } from "@/lib/tracks";
+import { SITE_URL } from "@/lib/site";
 import AdSense from "@/components/AdSense";
 import AffiliateList from "@/components/AffiliateList";
 import ViewCounter from "@/components/ViewCounter";
@@ -11,8 +12,6 @@ import Script from "next/script";
 interface ArticlePageProps {
   params: Promise<{ slug: string }>;
 }
-
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.sinotechlens.com";
 
 const trackStyles: Record<string, string> = {
   "general-china-tech": "bg-amber-100 text-amber-700",

@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { TRACKS, getTrack } from "@/lib/tracks";
 import { getArticlesByTrack } from "@/lib/articleData";
+import { SITE_URL } from "@/lib/site";
 import AdSense from "@/components/AdSense";
 
 interface TopicPageProps {
@@ -27,7 +28,7 @@ export async function generateMetadata({ params }: TopicPageProps): Promise<Meta
   return {
     title: `${track.name} — SinoTechLens`,
     description: track.description,
-    alternates: { canonical: `${process.env.NEXT_PUBLIC_SITE_URL || "https://www.sinotechlens.com"}/topics/${slug}` },
+    alternates: { canonical: `${SITE_URL}/topics/${slug}` },
   };
 }
 
